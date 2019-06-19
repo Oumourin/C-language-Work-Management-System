@@ -28,3 +28,8 @@ void initStudent()
 		std::cout << "学号输入错误！创建失败！" << std::endl;
 	}
 }
+
+void toString(Student stu)
+{
+	std::cout << "学号：" << stu.studentId << "姓名：" << stu.studentName << "班级号：" << stu.classId << std::endl;
+}

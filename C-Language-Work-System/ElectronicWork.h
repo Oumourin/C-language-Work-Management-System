@@ -36,3 +36,7 @@ struct ElectronicWork
 };
 
 #endif // !C_LANGUAGE_WORK_SYSTEM_ELECTRONICWORK_H
+
+
+//  打印电子作业成绩方法
+void toString(ElectronicWork electronicWork);

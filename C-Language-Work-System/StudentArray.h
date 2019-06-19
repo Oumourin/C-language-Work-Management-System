@@ -19,5 +19,8 @@ struct StudentArray
 
 #endif // !C_LANGUAGE_WORK_SYSTEM_STUDENT_ARRAY_H
 
-
+// 添加学生信息方法
 void addStudent(Student stu);
+
+// 添加数组打印方法
+void toString();

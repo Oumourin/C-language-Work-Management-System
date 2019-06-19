@@ -130,6 +130,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CreatStudentArray.cpp" />
+    <ClCompile Include="ElectronicWork.cpp" />
+    <ClCompile Include="ExperimentalWork.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="StudentArray.cpp" />
     <ClCompile Include="test.cpp" />

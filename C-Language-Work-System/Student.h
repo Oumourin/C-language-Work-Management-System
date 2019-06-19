@@ -40,3 +40,6 @@ bool checkStudenId(std::string studentId);
 
 //  创建一个新的学生结构体
 void initStudent();
+
+// 打印学生信息方法
+void toString(Student stu);

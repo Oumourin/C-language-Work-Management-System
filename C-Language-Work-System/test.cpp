@@ -5,8 +5,6 @@ extern StudentArray studentArray;
 int main(int args, char* argv[])
 {
 	initStudent();
-	getchar();
-	getchar();
-	getchar();
+	toString();
 	return 0;
 }

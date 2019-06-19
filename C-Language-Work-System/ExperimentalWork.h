@@ -36,3 +36,6 @@ struct ExperimentalWork
 };
 
 #endif // !C_LANGUAGE_WORK_SYSTEM_EXPERIMENTALWORK_H
+
+
+void toString(ExperimentalWork experimentalWork);
