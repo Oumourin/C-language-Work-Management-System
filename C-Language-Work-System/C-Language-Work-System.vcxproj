@@ -127,6 +127,7 @@
     <ClInclude Include="ExperimentalWork.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="StudentArray.h" />
+    <ClInclude Include="UI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CreatStudentArray.cpp" />
@@ -135,6 +136,7 @@
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="StudentArray.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="UI.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

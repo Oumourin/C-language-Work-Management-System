@@ -24,3 +24,6 @@ void addStudent(Student stu);
 
 // 添加数组打印方法
 void toString();
+
+// 批量添加学生
+void addStudent();

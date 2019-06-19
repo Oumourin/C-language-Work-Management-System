@@ -43,3 +43,6 @@ void initStudent();
 
 // 打印学生信息方法
 void toString(Student stu);
+
+// 录入成绩方法
+void enteringGrade();

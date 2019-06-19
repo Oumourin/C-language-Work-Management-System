@@ -22,6 +22,7 @@ void initStudent()
 	if (checkStudenId(studentId))
 	{
 		addStudent(Student(studentId, studentName, classId));
+		std::cout << "添加成功！" << std::endl;
 	}
 	else
 	{
@@ -32,4 +33,9 @@ void initStudent()
 void toString(Student stu)
 {
 	std::cout << "学号：" << stu.studentId << "姓名：" << stu.studentName << "班级号：" << stu.classId << std::endl;
+}
+
+void enteringGrade()
+{
+
 }
