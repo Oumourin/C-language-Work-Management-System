@@ -2,6 +2,8 @@
 
 #include<string>
 #include<memory.h>
+#include<iostream>
+#include<algorithm>
 
 #ifndef C_LANGUAGE_WORK_SYSTEM_ELECTRONICWORK_H
 #define C_LANGUAGE_WORK_SYSTEM_ELECTRONICWORK_H
@@ -14,12 +16,15 @@ struct ElectronicWork
 	std::string workContent[10];
 	// 已修读课程数量
 	unsigned int takenCourse;
-	//已经获得成绩
+	// 已经获得成绩
 	unsigned int earnedScore;
+	// 作业完成标记
+	bool finishMark[10];
 
 	ElectronicWork()
 	{
-		memset(score, 0, 10);
+		std::fill_n(score, 10, 0);
+		memset(finishMark, false, 10);
 		workContent[0] = "顺序";
 		workContent[1] = "选择";
 		workContent[2] = "循环";
@@ -40,3 +45,9 @@ struct ElectronicWork
 
 //  打印电子作业成绩方法
 void toString(ElectronicWork electronicWork);
+
+// Setter方法
+void setter(ElectronicWork *electronicWork);
+
+// 设置完全修读
+void setAllTakenClass(ElectronicWork *electronicWork);

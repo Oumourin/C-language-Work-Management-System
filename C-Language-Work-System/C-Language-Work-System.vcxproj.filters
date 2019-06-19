@@ -30,6 +30,15 @@
     <ClInclude Include="UI.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="FindData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SecurityCheck.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="initData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
@@ -51,6 +60,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="UI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FindData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SecurityCheck.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="initData.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,7 +1,9 @@
 #pragma once
 
 #include<string>
-#include<memory.h>
+#include<iostream>
+#include<memory>
+#include<algorithm>
 
 #ifndef C_LANGUAGE_WORK_SYSTEM_EXPERIMENTALWORK_H
 #define C_LANGUAGE_WORK_SYSTEM_EXPERIMENTALWORK_H
@@ -16,10 +18,13 @@ struct ExperimentalWork
 	unsigned int takenCourse;
 	// 已修读实验分数
 	unsigned int earnedScore;
+	// 完成标记
+	bool finishMark[10];
 
 	ExperimentalWork()
 	{
-		memset(experimentalScore, 0, 10);
+		std::fill_n(experimentalScore, 10, 0);
+		memset(finishMark, false, 10);
 		experimentalContent[0] = "顺序";
 		experimentalContent[1] = "选择";
 		experimentalContent[2] = "循环";
@@ -39,3 +44,9 @@ struct ExperimentalWork
 
 
 void toString(ExperimentalWork experimentalWork);
+
+// 设置未完全修读方法
+void setter(ExperimentalWork* experimentalWork);
+
+// 设置修读完成的方法
+void setAllClass(ExperimentalWork* experimentalWork);

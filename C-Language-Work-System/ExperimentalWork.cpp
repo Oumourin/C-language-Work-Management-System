@@ -10,3 +10,30 @@ void toString(ExperimentalWork experimentalWork)
 		std::cout << experimentalWork.experimentalContent[i] << "     " << experimentalWork.experimentalScore[i] << std::endl;
 	}
 }
+
+void setter(ExperimentalWork* experimentalWork)
+{
+	experimentalWork->experimentalScore[0] = 7;
+	experimentalWork->experimentalScore[2] = 7;
+	experimentalWork->experimentalScore[4] = 7;
+	experimentalWork->experimentalScore[7] = 7;
+	experimentalWork->experimentalScore[8] = 7;
+	experimentalWork->finishMark[0] = true;
+	experimentalWork->finishMark[2] = true;
+	experimentalWork->finishMark[4] = true;
+	experimentalWork->finishMark[7] = true;
+	experimentalWork->finishMark[8] = true;
+	experimentalWork->earnedScore = 35;
+	experimentalWork->takenCourse = 5;
+}
+
+void setAllClass(ExperimentalWork* experimentalWork)
+{
+	for (int i = 0; i < 10; i++)
+	{
+		experimentalWork->experimentalScore[i] = 8;
+		experimentalWork->finishMark[i] = true;
+	}
+	experimentalWork->takenCourse = 10;
+	experimentalWork->earnedScore = 80;
+}

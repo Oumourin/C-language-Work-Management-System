@@ -28,3 +28,6 @@ void toString();
 // 批量添加学生
 void addStudent();
 
+// 打印所有学生作业完成情况
+void printAllStudent();
+

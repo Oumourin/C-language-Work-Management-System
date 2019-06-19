@@ -69,6 +69,7 @@ void enteringGrade()
 					stu->electronicWork.score[getContentId] = getScore;
 					stu->electronicWork.takenCourse++;
 					stu->electronicWork.earnedScore += getScore;
+					stu->electronicWork.finishMark[getContentId] = true;
 					cout << "学号" << "              " << "姓名" << "       " << "科目" << "       " << "成绩" << endl;
 					cout << stu->studentId << " " << stu->studentName << "       " << stu->electronicWork.workContent[getContentId] << "       " << getScore << endl;
 				}
@@ -77,6 +78,7 @@ void enteringGrade()
 					stu->experimentalWork.experimentalScore[getContentId] = getScore;
 					stu->experimentalWork.takenCourse++;
 					stu->experimentalWork.earnedScore += getScore;
+					stu->experimentalWork.finishMark[getContentId] = true;
 					cout << "学号" << "              " << "姓名" << "       " << "科目" << "       " << "成绩" << endl;
 					cout << stu->studentId << " " << stu->studentName << "       " << stu->experimentalWork.experimentalContent[getContentId] << "       " << getScore << endl;
 				}
