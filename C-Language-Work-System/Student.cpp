@@ -102,3 +102,31 @@ void enteringGrade()
 		return;
 	}
 }
+
+void setter()
+{
+	cout << "输入要修改信息的学号：";
+	string getName = "", getId = "", getClassId = "";
+	cin >> getId;
+	Student *stu = findStudentById(getId);
+	cout << "姓名：(不修改请输入'#')";
+	cin >> getName;
+	cout << "学号：(不修改请输入'#')";
+	cin >> getId;
+	cout << "班级号：(不修改请输入'#')";
+	cin >> getClassId;
+	if (getName != "#")
+	{
+		stu->studentName = getName;
+	}
+	if (getId != "#")
+	{
+		stu->studentId = getId;
+	}
+	if (getClassId != "#")
+	{
+		stu->classId = getClassId;
+	}
+	cout << "修改完毕！修改后信息如下：" << endl;
+	toString(*stu);
+}

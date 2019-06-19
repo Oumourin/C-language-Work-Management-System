@@ -13,6 +13,7 @@ struct Student
 	std::string studentId;
 	std::string studentName;
 	std::string classId;
+	double finalScore;
 	ExperimentalWork experimentalWork;
 	ElectronicWork electronicWork;
 
@@ -21,6 +22,7 @@ struct Student
 		studentId = _studentId;
 		studentName = _studentName;
 		classId = _classId;
+		finalScore = 0.0;
 	}
 
 	// 空构造函数
@@ -28,7 +30,8 @@ struct Student
 	{
 		studentId = "";
 		studentName = "";
-		classId = "";
+		classId = ""; 
+		finalScore = 0.0;
 	}
 };
 
@@ -46,3 +49,6 @@ void toString(Student stu);
 
 // 录入成绩方法
 void enteringGrade();
+
+// 设置学生信息方法
+void setter();

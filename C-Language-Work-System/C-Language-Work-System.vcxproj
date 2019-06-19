@@ -128,6 +128,7 @@
     <ClInclude Include="FindData.h" />
     <ClInclude Include="initData.h" />
     <ClInclude Include="SecurityCheck.h" />
+    <ClInclude Include="StatisticalMethods.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="StudentArray.h" />
     <ClInclude Include="UI.h" />
@@ -139,6 +140,7 @@
     <ClCompile Include="FindData.cpp" />
     <ClCompile Include="initData.cpp" />
     <ClCompile Include="SecurityCheck.cpp" />
+    <ClCompile Include="StatisticalMethods.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="StudentArray.cpp" />
     <ClCompile Include="test.cpp" />

@@ -25,6 +25,7 @@ void setter(ExperimentalWork* experimentalWork)
 	experimentalWork->finishMark[8] = true;
 	experimentalWork->earnedScore = 35;
 	experimentalWork->takenCourse = 5;
+	experimentalWork->finishAllContent = false;
 }
 
 void setAllClass(ExperimentalWork* experimentalWork)
@@ -36,4 +37,21 @@ void setAllClass(ExperimentalWork* experimentalWork)
 	}
 	experimentalWork->takenCourse = 10;
 	experimentalWork->earnedScore = 80;
+	experimentalWork->finishAllContent = true;
+}
+
+void checkAllContentFinish(ExperimentalWork* experimentalWork)
+{
+	int finishFlag = 0;
+	for (int i = 0; i < 10; i++)
+	{
+		if (experimentalWork->finishMark[i])
+		{
+			finishFlag++;
+		}
+		if (finishFlag == 10)
+		{
+			experimentalWork->finishAllContent = true;
+		}
+	}
 }

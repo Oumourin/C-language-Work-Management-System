@@ -20,6 +20,23 @@ void setAllTakenClass(ElectronicWork *electronicWork)
 	}
 	electronicWork->earnedScore = 90;
 	electronicWork->takenCourse = 10;
+	electronicWork->finishAllContent = true;
+}
+
+void checkAllFinishWork(ElectronicWork* electronicWork)
+{
+	for (int i = 0; i < 10; i++)
+	{
+		int finishCount = 0;
+		if (electronicWork->finishMark[0])
+		{
+			finishCount++;
+		}
+		if (finishCount = 10)
+		{
+			electronicWork->finishAllContent = true;
+		}
+	}
 }
 
 void setter(ElectronicWork *electronicWork)
@@ -34,4 +51,5 @@ void setter(ElectronicWork *electronicWork)
 	electronicWork->finishMark[3] = true;
 	electronicWork->finishMark[5] = true;
 	electronicWork->finishMark[8] = true;
+	electronicWork->finishAllContent = false;
 }

@@ -20,11 +20,14 @@ struct ElectronicWork
 	unsigned int earnedScore;
 	// 作业完成标记
 	bool finishMark[10];
+	// 全部完成标记
+	bool finishAllContent;
 
 	ElectronicWork()
 	{
 		std::fill_n(score, 10, 0);
 		memset(finishMark, false, 10);
+		finishAllContent = false;
 		workContent[0] = "顺序";
 		workContent[1] = "选择";
 		workContent[2] = "循环";
@@ -51,3 +54,6 @@ void setter(ElectronicWork *electronicWork);
 
 // 设置完全修读
 void setAllTakenClass(ElectronicWork *electronicWork);
+
+// 检查是否完成作业
+void checkAllFinishWork(ElectronicWork* electronicWork);
