@@ -7,6 +7,7 @@ int main(int args, char* argv[])
 {
 	contentMenu();
 	addStudent();
+	enteringGrade();
 	toString();
 	return 0;
 }

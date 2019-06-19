@@ -1,4 +1,9 @@
 #include "StudentArray.h"
+#include"FindData.h"
+#include"UI.h"
+#include"SecurityCheck.h"
+
+using namespace std;
 
 extern StudentArray studentArray;
 
@@ -37,5 +42,61 @@ void toString(Student stu)
 
 void enteringGrade()
 {
+	string studenId;
+	cout << "输入要修改成绩的学生学号：" << endl;
+	cin >> studenId;
+	Student* stu;
+	stu = findStudentById(studenId);
+	if (stu != nullptr)
+	{
+		int getContentId;
+		int getJobType;
+		cout << "选择要修改的课程：";
+		contentMenu();
+		cin >> getContentId;
+		if (checkContentId(getContentId))
+		{
+			jobTypeMenu();
+			cout << "选择要修改的成绩类型：";
+			cin >> getJobType;
+			if (checkJobType(getJobType))
+			{
+				int getScore=0;
+				cout << "输入修改后的成绩：";
+				cin >> getScore;
+				if (getJobType == 1)
+				{
+					stu->electronicWork.score[getContentId] = getScore;
+					stu->electronicWork.takenCourse++;
+					stu->electronicWork.earnedScore += getScore;
+					cout << "学号" << "              " << "姓名" << "       " << "科目" << "       " << "成绩" << endl;
+					cout << stu->studentId << " " << stu->studentName << "       " << stu->electronicWork.workContent[getContentId] << "       " << getScore << endl;
+				}
+				if (getJobType == 0)
+				{
+					stu->experimentalWork.experimentalScore[getContentId] = getScore;
+					stu->experimentalWork.takenCourse++;
+					stu->experimentalWork.earnedScore += getScore;
+					cout << "学号" << "              " << "姓名" << "       " << "科目" << "       " << "成绩" << endl;
+					cout << stu->studentId << " " << stu->studentName << "       " << stu->experimentalWork.experimentalContent[getContentId] << "       " << getScore << endl;
+				}
 
+			}
+			else
+			{
+				cout << "类型选择错误！" << endl;
+				return;
+			}
+		}
+		else
+		{
+			cout << "课程选择错误！" << endl;
+			return;
+		}
+	}
+	else
+	{
+		cout << "查无此人!" << endl;
+		return;
+	}
 }

@@ -2,3 +2,5 @@
 
 
 void contentMenu();
+
+void jobTypeMenu();
