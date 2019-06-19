@@ -1,8 +1,12 @@
 #include"Student.h"
+#include"StudentArray.h"
 
+extern StudentArray studentArray;
 int main(int args, char* argv[])
 {
-	Student stu("1111", "1111", "1111");
+	initStudent();
+	getchar();
+	getchar();
 	getchar();
 	return 0;
 }

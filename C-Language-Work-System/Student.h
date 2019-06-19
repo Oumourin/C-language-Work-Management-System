@@ -1,6 +1,7 @@
 #pragma once
 
 #include<string>
+#include<iostream>
 #include"ElectronicWork.h"
 #include"ExperimentalWork.h"
 
@@ -21,6 +22,21 @@ struct Student
 		studentName = _studentName;
 		classId = _classId;
 	}
+
+	// 空构造函数
+	Student()
+	{
+		studentId = "";
+		studentName = "";
+		classId = "";
+	}
 };
 
 #endif // !C_Language_Work_System
+
+//  学号检查
+bool checkStudenId(std::string studentId);
+
+
+//  创建一个新的学生结构体
+void initStudent();
