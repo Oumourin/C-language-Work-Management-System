@@ -194,9 +194,166 @@ void setAllClass(ExperimentalWork* experimentalWork);
 void checkAllContentFinish(ExperimentalWork* experimentalWork);
 ```
 
-函数定义：
+函数功能：
 
 检查是否修完所有课程，修完设置为true
 
+###  查找相关函数
 
+####  按学号查找方法
 
+函数定义：
+
+```c++
+Student* findStudentById(std::string studentId);
+```
+
+函数功能：
+
+接受一个string对象，对数组中学生结构体的学号成员进行匹配，找到返回其指针，未找到返回空指针
+
+####  按作业输出信息方法
+
+函数定义：
+
+```c++
+void findImformationByContent();
+```
+
+函数功能：
+
+通过对于作业的选择，实现对特定作业的打印
+
+####  按姓名查找芳芳
+
+函数定义
+
+```c++
+void findImformationByName();
+```
+
+函数功能：
+
+接受一个姓名的输入，实现对于姓名的模糊查找，之后输出匹配的信息
+
+####  学号查找输出方法
+
+函数定义：
+
+```c++
+void findImformationById();
+```
+
+函数功能：
+
+实现对于按学号查找和三个结构体toString方法的打包
+
+###  数据初始化相关函数
+
+####  创建初始数据
+
+函数定义：
+
+```c++
+void initArray();
+```
+
+函数功能：
+
+生成四个供测试使用的数据
+
+###  安全检查函数
+
+####  课程号合法性检查
+
+函数定义
+
+```c++
+bool checkContentId(int contentId);
+```
+
+函数功能：
+
+接受一个整型输入，检查是否合法
+
+####  成绩类型合法性检查
+
+函数定义：
+
+```c++
+bool checkJobType(int jobType);
+```
+
+函数功能：
+
+接受一个整型输入，检查是否合法
+
+###  统计相关函数
+
+####  生成总成绩方法
+
+函数定义：
+
+```
+void getfinalScore();
+```
+
+函数功能：
+
+生成数组内所有结构体当前的总成绩
+
+####  输出班级信息方法
+
+函数定义：
+
+```c++
+void getClassImformation();
+```
+
+函数功能：
+
+实现对于特定班级号班级情况的打印
+
+####  输出特定学生信息方法
+
+函数定义：
+
+```c++
+void getImformationByStudent();
+```
+
+函数功能：
+
+实现按学号对于特定学生信息的打印
+
+####  UI相关函数
+
+```c++
+void contentMenu();
+
+void jobTypeMenu();
+
+void welcomUI();
+
+void functionMenu();
+
+void statisticalMenu();
+
+void choiceFunction();
+
+void findUI();
+
+void choiceFind();
+
+void modifyUI();
+
+void choiceModify();
+
+void statisticalUI();
+
+void choiceStatistics();
+
+void pauseFunction();
+```
+
+各部分UI定义
