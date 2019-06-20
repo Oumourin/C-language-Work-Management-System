@@ -58,3 +58,8 @@ void getClassImformation()
 		}
 	}
 }
+
+void getImformationByStudent()
+{
+	findImformationByName();
+}

@@ -1,5 +1,6 @@
-#include "UI.h"
+#include"Statement.h"
 #include<iostream>
+
 using namespace std;
 
 void contentMenu()
@@ -27,4 +28,143 @@ void jobTypeMenu()
 	cout << "            1.作业                 " << endl;
 	cout << "=================================" << endl;
 }
+
+void welcomUI()
+{
+	printf("====================================================================\n");
+	printf("=====                       C语言作业管理系统                       =====\n");
+	printf("=====                       Copyright2019                      =====\n");
+	printf("=====                   XXX XXX XXX                   =====\n");
+	printf("=====                   XXX XXX XXX                  =====\n");
+	printf("=====                     AllRightsReserved                    =====\n");
+	printf("=====                     按任意键进入系统                     =====\n");
+	printf("====================================================================\n");
+}
+
+void functionMenu()
+{
+	printf("====================================================================\n");
+	printf("=====                      系  统  菜  单                      =====\n");
+	printf("                                                                                             \n");
+	printf("=====                      0、退出系统                       =====\n");
+	printf("=====                      1、作业录入                       =====\n");
+	printf("=====                      2、信息显示                       =====\n");
+	printf("=====                      3、查询系统                   =====\n");
+	printf("=====                      4、信息修改                         =====\n");
+	printf("=====                      5、信息统计                       =====\n");
+	printf("=====                      6、重置数据                  =====\n");
+	printf("                                                                                             \n");
+	printf("====================================================================\n");
+}
+
+void statisticalMenu()
+{
+	printf("====================================================================\n");
+	printf("=====                      统  计  菜  单                      =====\n");
+	printf("                                                                                             \n");
+	printf("=====                      0、退出系统                       =====\n");
+	printf("=====                      1、班级统计                      =====\n");
+	printf("=====                      2、学号统计                       =====\n");
+	printf("====================================================================\n");
+}
+
+void choiceFunction()
+{
+	int getInput;
+	cout << "输入需要的功能：";
+	cin >> getInput;
+	switch (getInput)
+	{
+	case 0:
+		exit(0);
+		break;
+	case 1:
+		enteringGrade();
+		break;
+	case 2:
+		printAllStudent();
+		break;
+	case 3:
+		findUI();
+		choiceFind();
+	case 4:
+		modifyUI();
+		choiceModify();
+		break;
+	case 5:
+
+	default:
+		break;
+	}
+}
+
+void findUI()
+{
+	printf("====================================================================\n");
+	printf("=====                      统  计  菜  单                      =====\n");
+	printf("                                                                                             \n");
+	printf("=====                      0、返回上级                       =====\n");
+	printf("=====                      1、学号查询                      =====\n");
+	printf("=====                      2、课程查询                       =====\n");
+	printf("=====                      3、姓名查询                       =====\n");
+	printf("====================================================================\n");
+}
+
+void choiceFind()
+{
+	int getInput;
+	cout << "选择需要的查询方式：" << endl;
+	cin >> getInput;
+	switch (getInput)
+	{
+	case 0:
+		break;
+	case 1:
+		findImformationById();
+		break;
+	case 2:
+		findImformationByContent();
+		break;
+	case 3:
+		findImformationByName();
+		break;
+	default:
+		cout << "输入错误！" << endl;
+		break;
+	}
+}
+
+void modifyUI()
+{
+	printf("====================================================================\n");
+	printf("=====                      修  改  菜  单                      =====\n");
+	printf("                                                                                             \n");
+	printf("=====                      0、返回上级                       =====\n");
+	printf("=====                      1、修改成绩                      =====\n");
+	printf("=====                      2、修改信息                       =====\n");
+	printf("====================================================================\n");
+}
+
+void choiceModify()
+{
+	int getInput;
+	cout << "选择需要修改的信息类型：" << endl;
+	cin >> getInput;
+	switch (getInput)
+	{
+	case 0:
+		break;
+	case 1:
+		enteringGrade();
+		break;
+	case 2:
+		setter();
+		break;
+	default:
+		cout << "输入错误！" << endl;
+		break;
+	}
+}
+
+
 
