@@ -107,6 +107,7 @@ void choiceFunction()
 		break;
 	case 7:
 		initStudent();
+		pauseFunction();
 		break;
 	default:
 		cout << "输入错误，重新输入！" << endl;

@@ -106,7 +106,7 @@ void findImformationByName()
 			}
 			std::cout << experimentalWork->earnedScore << " ";
 			std::cout << "实验" << std::endl;
-			cout << "该生期末成绩为：" << studentArray.studentArray[i].finalScore;
+			cout << "该生期末成绩为：" << studentArray.studentArray[i].finalScore << endl;
 		}
 	}
 }
