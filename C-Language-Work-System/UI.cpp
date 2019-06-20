@@ -32,10 +32,10 @@ void jobTypeMenu()
 void welcomUI()
 {
 	printf("====================================================================\n");
-	printf("=====                       C语言作业管理系统                       =====\n");
+	printf("=====                   C语言作业管理系统                      =====\n");
 	printf("=====                       Copyright2019                      =====\n");
-	printf("=====                   XXX XXX XXX                   =====\n");
-	printf("=====                   XXX XXX XXX                  =====\n");
+	printf("=====                   王佳鑫 郑发远 郑发远                   =====\n");
+	printf("=====                   于弘兴 张圣扬 汪子阳                   =====\n");
 	printf("=====                     AllRightsReserved                    =====\n");
 	printf("=====                     按任意键进入系统                     =====\n");
 	printf("====================================================================\n");
@@ -53,6 +53,7 @@ void functionMenu()
 	printf("=====                      4、信息修改                         =====\n");
 	printf("=====                      5、信息统计                       =====\n");
 	printf("=====                      6、重置数据                  =====\n");
+	printf("=====                      7、新增学生                  =====\n");
 	printf("                                                                                             \n");
 	printf("====================================================================\n");
 }
@@ -103,6 +104,9 @@ void choiceFunction()
 		pauseFunction();
 	case 6:
 		initArray();
+		break;
+	case 7:
+		initStudent();
 		break;
 	default:
 		cout << "输入错误，重新输入！" << endl;

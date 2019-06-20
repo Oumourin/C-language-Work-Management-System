@@ -48,12 +48,12 @@ void addStudent()
 
 void printAllStudent()
 {
-	std::cout << "姓名" << "       " << "学号" << "       " << "顺序" << " " << "选择" << " " << "循环" << " " << "函数" << " " << "指针" << " " << "数组" << "字符串" << " " << "结构体" << " " << "文件" << " " << "编译预处理" <<" "<<"总成绩"<<" "<< "作业类别" << std::endl;
+	std::cout << "姓名" << "                 " << "学号" << "   " << "顺序" << " " << "选择" << " " << "循环" << " " << "函数" << " " << "指针" << " " << "数组" << "字符串" << " " << "结构体" << " " << "文件" << " " << "编译预处理" <<" "<<"总成绩"<<" "<< "作业类别" << std::endl;
 	for (int i = 0; i < studentArray.arraySize; i++)
 	{
 		ElectronicWork* electronicWork = &studentArray.studentArray[i].electronicWork;
 		ExperimentalWork* experimentalWork = &studentArray.studentArray[i].experimentalWork;
-		std::cout << studentArray.studentArray[i].studentName << "       " << studentArray.studentArray[i].studentId;
+		std::cout << studentArray.studentArray[i].studentName << "     " << studentArray.studentArray[i].studentId;
 		for (int j = 0; j < 10; j++)
 		{
 			if (electronicWork->finishMark[j])
