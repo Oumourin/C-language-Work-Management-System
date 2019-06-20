@@ -1,5 +1,8 @@
 #include "FindData.h"
 #include"UI.h"
+#include"Student.h"
+#include"ElectronicWork.h"
+#include"ExperimentalWork.h"
 
 using namespace std;
 extern StudentArray studentArray;
@@ -102,6 +105,25 @@ void findImformationByName()
 			}
 			std::cout << "实验" << std::endl;
 		}
+	}
+}
+
+void findImformationById()
+{
+	string getId;
+	cout << "输入要查找的学号：";
+	cin >> getId;
+	Student*stu= findStudentById(getId);
+	if (stu != nullptr)
+	{
+		cout << "学生信息如下：" << endl;
+		toString(*stu);
+		toString(stu->electronicWork);
+		toString(stu->experimentalWork);
+	}
+	else
+	{
+		cout << "未找到此人！" << endl;
 	}
 }
 

@@ -68,6 +68,7 @@ void statisticalMenu()
 	printf("====================================================================\n");
 }
 
+
 void choiceFunction()
 {
 	int getInput;
@@ -80,20 +81,31 @@ void choiceFunction()
 		break;
 	case 1:
 		enteringGrade();
+		pauseFunction();
 		break;
 	case 2:
 		printAllStudent();
+		pauseFunction();
 		break;
 	case 3:
 		findUI();
 		choiceFind();
+		pauseFunction();
+		break;
 	case 4:
 		modifyUI();
 		choiceModify();
+		pauseFunction();
 		break;
 	case 5:
-
+		statisticalUI();
+		choiceStatistics();
+		pauseFunction();
+	case 6:
+		initArray();
+		break;
 	default:
+		cout << "输入错误，重新输入！" << endl;
 		break;
 	}
 }
@@ -121,12 +133,15 @@ void choiceFind()
 		break;
 	case 1:
 		findImformationById();
+		// pauseFunction();
 		break;
 	case 2:
 		findImformationByContent();
+		// pauseFunction();
 		break;
 	case 3:
 		findImformationByName();
+		// pauseFunction();
 		break;
 	default:
 		cout << "输入错误！" << endl;
@@ -164,6 +179,46 @@ void choiceModify()
 		cout << "输入错误！" << endl;
 		break;
 	}
+}
+
+void statisticalUI()
+{
+	printf("====================================================================\n");
+	printf("=====                      修  改  菜  单                      =====\n");
+	printf("                                                                                             \n");
+	printf("=====                      0、返回上级                       =====\n");
+	printf("=====                      1、班级统计                      =====\n");
+	printf("=====                      2、姓名查询                       =====\n");
+	printf("====================================================================\n");
+}
+
+void choiceStatistics()
+{
+	getfinalScore();
+	int getInput;
+	cout << "选择需要查询的信息类型：" << endl;
+	cin >> getInput;
+	switch (getInput)
+	{
+	case 0:
+		break;
+	case 1:
+		getClassImformation();
+		break;
+	case 2:
+		getImformationByStudent();
+		break;
+	default:
+		cout << "输入错误！" << endl;
+		break;
+	}
+}
+
+void pauseFunction()
+{
+	cout << "请按任意键继续。。。。。" << endl;
+	getchar();
+	getchar();
 }
 
 

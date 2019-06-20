@@ -6,7 +6,7 @@
 #include"StatisticalMethods.h"
 
 extern StudentArray studentArray;
-int main(int args, char* argv[])
-{
-
-}
+//int main(int args, char* argv[])
+//{
+//
+//}

@@ -11,3 +11,6 @@ void findImformationByContent();
 
 // 根据姓名查找
 void findImformationByName();
+
+// 学号查找输出打包方法
+void findImformationById();
