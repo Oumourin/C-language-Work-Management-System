@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -123,6 +123,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ElectronicWork.h" />
+    <ClInclude Include="ExperimentalWork.h" />
+    <ClInclude Include="FindData.h" />
+    <ClInclude Include="initData.h" />
+    <ClInclude Include="SecurityCheck.h" />
+    <ClInclude Include="Statement.h" />
+    <ClInclude Include="StatisticalMethods.h" />
+    <ClInclude Include="Student.h" />
+    <ClInclude Include="StudentArray.h" />
+    <ClInclude Include="UI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CreatStudentArray.cpp" />
+    <ClCompile Include="ElectronicWork.cpp" />
+    <ClCompile Include="ExperimentalWork.cpp" />
+    <ClCompile Include="FindData.cpp" />
+    <ClCompile Include="initData.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SecurityCheck.cpp" />
+    <ClCompile Include="StatisticalMethods.cpp" />
+    <ClCompile Include="Student.cpp" />
+    <ClCompile Include="StudentArray.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="UI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

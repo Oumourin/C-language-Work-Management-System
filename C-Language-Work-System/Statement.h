@@ -1,0 +1,10 @@
+#pragma once
+#include"ElectronicWork.h"
+#include"ExperimentalWork.h"
+#include"FindData.h"
+#include"initData.h"
+#include"SecurityCheck.h"
+#include"StatisticalMethods.h"
+#include"Student.h"
+#include"StudentArray.h"
+#include"UI.h"
